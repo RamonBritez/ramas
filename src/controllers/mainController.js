@@ -12,6 +12,7 @@ const controller = {
 		let productsInSale = products.filter(product => product.category === "in-sale");
 		let productsVisited = products.filter(product => product.category === "visited");
 		
+		console.log(products)
 		res.render("index", {
 			productsVisited,
 			productsInSale,
